@@ -3,6 +3,7 @@
 from typing import Union
 
 FloatInt = Union[int, float]
+
 def sum_mixed_list(mxd_lst: FloatInt) -> float:
     """return sum of mixed list"""
     sum = 0.0
