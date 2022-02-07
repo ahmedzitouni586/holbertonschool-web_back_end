@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
+"""tuple annotation"""
 
 from typing import Union, Tuple
 
-FloatInt = Union[int, float]
-x = Tuple[str, float]
 
 
-def to_kv(k: str, v: FloatInt) -> x:
+def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
+    """return tuple"""
     return (k, v)
