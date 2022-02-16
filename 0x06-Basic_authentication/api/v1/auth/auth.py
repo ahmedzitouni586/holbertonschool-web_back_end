@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """Auth module"""
 
-from typing import List
+from typing import List, TypeVar
 from flask import request
 
 class Auth:
     """Auth class"""
     def __init__(self) -> None:
+        """initialisation"""
         pass
 
     def require_auth(self, path: str, excluded_paths: List[str]) -> bool:
