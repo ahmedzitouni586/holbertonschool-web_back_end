@@ -1,8 +1,8 @@
 -- script that creates a table users
 
-CREATE TABLE if not exists users (
-    id INT NOTNULL AUTOINCREMENT,
-    email VARCHAR(255) NOT NULL,
-    name VARCHAR(255),
-    UNIQUE (email)
+CREATE TABLE IF NOT EXISTS `users` (
+    `id` INT NOTNULL AUTO_INCREMENT,
+    `email` VARCHAR(255) NOT NULL UNIQUE,
+    `name` VARCHAR(255),
+    PRIMARY KEY (id)
 );
